@@ -1,5 +1,5 @@
 function isCorrectFunc(func) {
-    let funcArray = ['add', 'sub', 'mult', 'div'];
+    const funcArray = ['add', 'sub', 'mult', 'div'];
     return funcArray.indexOf(func) + 1;
 }
 
@@ -25,9 +25,9 @@ function inputNumber() {
 let flag = true;
 
 while(flag) {
-    let func = inputFunction();
-    let firstNumber = inputNumber();
-    let secondNumber = inputNumber();
+    const func = inputFunction();
+    const firstNumber = inputNumber();
+    const secondNumber = inputNumber();
 
     switch(func) {
         case 'add':
@@ -40,7 +40,7 @@ while(flag) {
             alert(`${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}`);
             break;
         default:
-            alert(`${firstNumber} * ${secondNumber} = ${firstNumber / secondNumber}`);
+            alert(`${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`);
     }
 
     flag = confirm('Do you want continue?');
